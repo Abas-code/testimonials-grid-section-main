@@ -1,0 +1,89 @@
+/* variables */
+:root {
+  --m-violet: #7541c8;
+  --v-d-g-blue: #48556a;
+  --v-d-b-blue: #19212e;
+  --white: #ffffff;
+  --v-l-gray: #cfcfcf;
+  --l-g-blue: #ecf2f8;
+  --footer: #3e52a3;
+}
+
+/* fonts */
+@font-face { font-family: 'Barlow-500'; src: url('fonts/BarlowSemiCondensed-Medium.ttf'); }
+@font-face { font-family: 'Barlow-600'; src: url('fonts/BarlowSemiCondensed-SemiBold.ttf'); }
+
+/* reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Barlow-500';
+	font-size: 13px;
+	font-weight: normal;
+}
+
+/* hide styles */
+@media screen and (min-width: 1px) { body { display: none; } }
+
+/* basic/mobile styles */
+@media screen and (min-width: 320px) {
+  body {
+  	display: block;
+  	width: 100%;
+  	height: auto;
+  	background: var(--v-l-gray);
+  }
+  main { width: 100%; height: auto; padding: 60px 24px 36px; }
+  section {
+  	border-radius: 10px;
+  	width: 100%;
+    max-width: 400px;
+  	height: auto;
+  	padding: 30px;
+    margin: 0 auto 24px;
+  }
+  .avatar { display: flex; align-items: center; margin-bottom: 16px; }
+  .avatar img { border-radius: 50%; width: 40px; margin-right: 16px; }
+  h1 { font-size: 1.1rem; }
+  h2 { font-family: 'Barlow-600'; font-size: 1.8rem; margin-bottom: 16px; }
+  .name p { opacity: 50%; }
+  article p { opacity: 70%; }
+  .daniel, .jonathan, .patrick { color: var(--white); }
+  .jeanette, .kira { background: var(--white); color: var(--v-d-g-blue); }
+  .daniel {
+    background: var(--m-violet) url("images/bg-pattern-quotation.svg") no-repeat 90% 0%;
+  }
+  .daniel img, .patrick img { border: 2px solid hsl(263, 55%, 70%); }
+  .jonathan { background: var(--v-d-g-blue); }
+  .patrick { background: var(--v-d-b-blue); }
+  footer {
+  	width: 100%;
+  	height: auto;
+  	padding: 10px;
+  	font-size: 11px;
+  	text-align: center;
+  }
+  footer a { font-size: 11px; color: var(--footer); }
+}
+
+/* tablet styles */
+@media screen and (min-width: 426px) { footer, footer a { font-size: 1.2rem; } }
+
+/* desktop styles */
+@media screen and (min-width: 1001px) {
+  main {
+    margin: 100px auto;
+    width: 95%;
+    max-width: 1500px;
+    height: auto;
+    padding: 0;
+    display: grid;
+    grid-gap: 24px;
+  }
+  section { width: auto; height: auto; max-width: unset; margin: 0; }
+  .daniel { grid-column: 1 / span 3; grid-row: 1; }
+  .patrick { grid-column: 2 / span 3; grid-row: 2; }
+  .kira { grid-column: 5; grid-row: 1 / span 2; }
+}
