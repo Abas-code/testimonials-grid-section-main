@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-I learnt how to use CSS Grid.
+I learnt how to use CSS Grid, and also how to make an image part of the background. 
 
 ```css
 main {
@@ -56,11 +56,15 @@ main {
 .daniel { grid-column: 1 / span 3; grid-row: 1; }
 .patrick { grid-column: 2 / span 3; grid-row: 2; }
 .kira { grid-column: 5; grid-row: 1 / span 2; }
+
+.daniel {
+  background: var(--m-violet) url("images/bg-pattern-quotation.svg") no-repeat 90% 0%;
+}
 ```
 
 ### Continued development
 
-I'm still increasing my knowledge of CSS Grid. 
+I'm still learning how to use CSS Grid. 
 
 ### Useful resources
 
