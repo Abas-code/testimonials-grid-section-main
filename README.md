@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/Abas-code/)
-- Live Site URL: (https://vercel.app/)
+- Solution URL: (https://github.com/Abas-code/testimonials-grid-section-main)
+- Live Site URL: (https://testimonials-grid-section-main-six-bay.vercel.app/)
 
 ## My process
 
